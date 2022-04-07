@@ -1,0 +1,17 @@
+.app__auction {
+  flex: 3;
+  height: 38vh;
+  .app__auction-container {
+    display: flex;
+    justify-content: space-between;
+    .info-container {
+      flex: 3;
+    }
+    .timer-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

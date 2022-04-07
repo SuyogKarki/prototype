@@ -1,0 +1,41 @@
+.app__carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 40vh;
+  padding: 10px 20px;
+  .app__carousel-container {
+    position: relative;
+    .carousel__arrow {
+      position: absolute;
+      color: rgb(73, 159, 116);
+      z-index: 100;
+      font-size: 28px;
+      background-color: black;
+      cursor: pointer;
+      &.left {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      &.right {
+        top: 50%;
+        right: 0;
+      }
+    }
+    .carousel_images {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      transition: all 01s ease-in-out;
+      div {
+        margin-right: 20px;
+        img {
+          width: 420px;
+          height: 40vh;
+          object-fit: cover;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
